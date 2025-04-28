@@ -49,7 +49,6 @@ if __name__ == '__main__':
         plt.ylabel('Iterations')
         plt.grid(True)
         plt.show()
-
     # 对于80×64网格，用其最佳松弛因子绘制等温线
     nx, ny = grid_sizes[-1], int(grid_sizes[-1] * Ly / Lx)
     opt_omega = min(results[(nx, ny)], key=results[(nx, ny)].get)
